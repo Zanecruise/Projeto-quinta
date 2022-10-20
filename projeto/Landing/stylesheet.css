@@ -1,0 +1,63 @@
+#logoimg{
+    height: 50px;
+    width: 50px;
+
+
+}
+
+#logomarca{
+
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+#top1{
+
+    display: flex;
+    background-size: cover;
+    background-color: rgb(197, 197, 197);
+    background-image: linear-gradient(gray, rgba(233, 233, 233, 0.808));
+    background-attachment: scroll;
+ 
+}
+
+#top2{
+
+    display: flex;
+    background-size: cover;
+    background-color: rgb(197, 197, 197);
+    background-image: linear-gradient(gray, rgba(233, 233, 233, 0.808));
+    background-attachment: scroll;
+ 
+}
+
+body{
+
+ margin: 0px;
+
+}
+
+#loginbutton{
+
+
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    color: inherit; 
+    
+
+}
+
+#registerbutton{
+
+ 
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration:none;
+    color: inherit; 
+
+}
