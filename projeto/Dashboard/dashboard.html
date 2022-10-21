@@ -14,21 +14,111 @@
 </head>
 <body id="bg">
 
+  <nav>
+
+    <ul>
+      <li><a href="/projeto/Dashboard/dashboard.html"><img id="tamanhonavimg" src="/projeto/Dashboard/img/dash.png" alt="dashboard"></a></li>
+      <li><a href=""><img id="tamanhonavimg" src="/projeto/Dashboard/img/box.png" alt="estoque"></a></li>
+      <li><a href=""><img id="tamanhonavimg" src="/projeto/Dashboard/img/money.png" alt="sell"></a></li>
+      <li><a href=""><img id="tamanhonavimg" src="/projeto/Dashboard/img/config.png" alt="config"></a></li>
+    </ul>
+
+  </nav>
+
+  <header id="espaco">
+
+    <div id="top">
+        
+          <h1 id="title">Dashboard</h1>
+
+            <div id="flexdentro">
+              <label for="Periodo">Periodo</label>
+              <select name="Periodo" id="periodo">
+                <option value="diario">Diario</option>
+                <option value="semanal">Semanal</option>
+                <option value="mensal">Mensal</option>
+                <option value="trimestral">Trimestral</option>
+                <option value="anual">Anual</option>
+              </select>
+            </div>
+  
+            <div id="flexdentro">
+              <label for="Dinheiro">Dinheiro</label>
+              <select name="Dinheiro" id="dinheiro">
+                <option value="fisico">Físico</option>
+                <option value="virtual">Virtual</option>
+              </select>
+            </div>
+            <div id="flexdentro">
+              <label for="Loja">loja</label>
+              <select name="Loja" id="loja">
+                <option value="todas">Todas</option>
+                <option value="semanal">minha loja</option>
+              </select>
+            </div> 
+      </div>
+    </div>   
+   
+    </div>
+
+  </header>
 
 
-        <header><h1 id="title">Dashboard</h1></header>
-        <nav>
-          <ul>
-            <li><a href="#">London</a></li>
-            <li><a href="#">Paris</a></li>
-            <li><a href="#">Tokyo</a></li>
-          </ul>
+  <center id="espaco">
 
+    <div id="flexcima">
+      <div id="boxdespesas">
+        <h2 id="blockstext">Despesas</h1>
+        <h1 id="valorboxcima">R$1.000,10</h1>
+      </div>
+      <div id="boxliquido">
+        <h2 id="blockstext">Valor líquido</h1>
+        <h1 id="valorboxcima">R$2.061,80</h1>
+      </div>
+      <div id="boxbruto">
+        <h2 id="blockstext">Valor bruto</h1>
+        <h1 id="valorboxcima">R$3.061,90</h1>
+      </div>
+    </div>
+    
+    <div id="flexbaixo">
+      <div id="boxprodutos">
+          <div>
+            <div id="textcima">
+              <h1 id="textboxtitle">Produto</h1>
+              <h1 id="textboxtitle">Custo</h1>
+              <h1 id="textboxtitle">Lucro</h1>
+              <h1 id="textboxtitle">%VE</h1>
+            </div>
 
+            <table style="width:100%">
+              <tr>
+                <th>Produto</th>
+                <th>Custo</th>
+                <th>Lucro</th>
+                <th>%VE</th>
+              </tr>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+              </tr>
+            </table>
 
-<div id="boxflex"><div id="boxdespesas"></div>
-<div id="boxliquido"></div>
-<div id="boxbruto"></div></div>
+          </div>
+      </div>
+      <div id="boxcanais">
+        <h2 id="blockstext">Canais de venda - lucro</h1>
+      </div>
+    </div>
+
+  </center>
+
 
 
 
