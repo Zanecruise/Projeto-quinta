@@ -2,12 +2,10 @@ body{
     background: linear-gradient(68.15deg, #0C3B6F 16.62% , #1f68bb 85.61%);
     margin: 0;
     overflow: hidden;
-    max-width: 100vh;
-    max-height: 100vh;
     background-size: cover;
-    background-repeat: none;
     background-attachment: fixed;
-    background-clip:border-box;
+    font-family: 'Imprima', sans-serif;
+    border-top: 4px, solid, white;
 }
 
 #text1{
@@ -22,9 +20,7 @@ body{
 }
 
 #logomarca{
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 10px;
+    font-family: 'Imprima', sans-serif;
 
 }
 
@@ -36,6 +32,7 @@ body{
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    font-family: 'Imprima', sans-serif;
 
 }
 
@@ -48,18 +45,20 @@ body{
     align-items: center;
     justify-content: flex-start;
     align-content: center;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 50px;
- 
+    margin-left: 100px;
+
 }
 
 #top2{
+    font-family: 'Imprima', sans-serif;
     display: flex;
     color: white;
     background-size: cover;
     background-attachment: scroll;
     padding-right: 50px;
- 
+
 }
 
 body{
@@ -70,19 +69,17 @@ body{
 
 #loginbutton{
 
-
-    font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Imprima', sans-serif;
     font-weight: bold;
     text-decoration:none;
     color: inherit;
     padding-left: 10px; 
+    padding-right: 10px; 
     
 }
 
 #registerbutton{
-    font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Imprima', sans-serif;
     font-weight: bold;
     text-decoration:none;
     color: inherit;
@@ -101,6 +98,8 @@ body{
 }
 
 #botao{
+    font-family: 'Imprima', sans-serif;
+    font-weight: bold;
     background-color: white;
     width: 180px;
     height: 60px;
@@ -112,3 +111,19 @@ body{
 #botao:hover{
     background-color: rgba(255, 255, 255, 0.75);
 }
+
+#print{
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-left: 1300px;
+}
+
+#main1{
+    margin-left: 100px;
+}
+
+main{
+    border-top: 0.4px, solid, white;
+}
+
