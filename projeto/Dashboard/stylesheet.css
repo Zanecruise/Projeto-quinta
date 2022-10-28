@@ -1,3 +1,12 @@
+body, html{
+
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: none;
+    overflow: hidden;
+
+}
+
 
 #bg {
     background-image: linear-gradient(to right, #13437a ,  #0C3B6F);
@@ -21,16 +30,16 @@
   }
  
 #boxdespesas{
-    height: 500px;
-    width: 500px;
+    height: 50vmin;
+    width: 50vmin;
     border-radius: 5px;
     background-image: linear-gradient(#FF0000, #ff00000e );
     margin-right: 40px;
 }
 
 #boxliquido{
-    height: 500px;
-    width: 500px;
+    height: 50vmin;
+    width: 50vmin;
     border-radius: 5px;
     background-image: linear-gradient(#00FF38, #ff00000e );
     margin-right: 40px;
@@ -38,8 +47,8 @@
 }
 
 #boxbruto{
-    height: 500px;
-    width: 500px;
+    height: 50vmin;
+    width: 50vmin;
     border-radius: 5px;
     background-image: linear-gradient(#FF00E5, #ff00000e );
     margin-right: 40px;
@@ -63,16 +72,16 @@
 }
 
 #boxprodutos{
-    height: 500px;
-    width: 1040px;
+    height: 50vmin;
+    width: 102vmin;
     border-radius: 5px;
     background-image: linear-gradient(#2D284B, #2d284bbe );
     margin-right: 40px;
 } 
 
 #boxcanais{
-    height: 500px;
-    width: 500px;
+    height: 50vmin;
+    width: 50vmin;
     border-radius: 5px;
     background-image: linear-gradient(#2D284B, #2d284bbe);
     margin-right: 40px;
