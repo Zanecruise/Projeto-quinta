@@ -1,3 +1,8 @@
+#bg{
+    background-image: linear-gradient(to right, #0C3B6F , #13437a);
+    margin: 0px;
+}
+
 #logoimg{
     height: 50px;
     width: 50px;
@@ -19,8 +24,8 @@
 
     display: flex;
     background-size: cover;
-    background-color: rgb(197, 197, 197);
-    background-image: linear-gradient(gray, rgba(233, 233, 233, 0.808));
+    background-color: #13437a;
+    background-image: linear-gradient(#13437a, #0C3B6F);
     background-attachment: scroll;
     flex-wrap: nowrap;
     align-items: center;
@@ -35,8 +40,8 @@
 
     display: flex;
     background-size: cover;
-    background-color: rgb(197, 197, 197);
-    background-image: linear-gradient(gray, rgba(233, 233, 233, 0.808));
+    background-color: #13437a;
+    background-image: linear-gradient(#13437a, #0C3B6F);
     background-attachment: scroll;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -51,6 +56,7 @@
 #top2{
 
     display: flex;
+    color: white;
     background-size: cover;
     background-attachment: scroll;
     padding-right: 50px;
@@ -68,8 +74,10 @@ body{
 
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     text-decoration:none;
-    color: inherit; 
+    color: inherit;
+    padding-left: 10px; 
     
 
 }
@@ -84,4 +92,8 @@ body{
     color: inherit;
     padding-left: 10px; 
 
+}
+
+#section{
+    color: white;
 }
