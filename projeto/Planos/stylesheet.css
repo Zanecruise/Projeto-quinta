@@ -1,0 +1,79 @@
+body{
+    background: linear-gradient(68.15deg, #108884 16.62% , #1f68bb 85.61%);
+    margin: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Imprima', sans-serif;
+    border-top: 4px, solid, white;
+}
+
+#top{
+    display: flex;
+    background-size: cover;
+    background-attachment: scroll;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Imprima', sans-serif;
+
+}
+
+#logoimg{
+    height: 7vmin;
+    width: 7vmin;
+}
+
+#logomarca{
+    font-family: sans-serif;
+    color: white;
+    padding-left: 2vmin;
+    font-size: 2rem;
+
+}
+
+#top1{
+    display: flex;
+    background-size: cover;
+    background-attachment: scroll;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+
+}
+
+#top2{
+    font-family: 'Imprima', sans-serif;
+    display: flex;
+    color: white;
+    background-size: cover;
+    background-attachment: scroll;
+    padding-right: 50px;
+
+}
+
+#loginbutton{
+
+    font-family: 'Imprima', sans-serif;
+    font-weight: bold;
+    text-decoration:none;
+    color: inherit;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    
+}
+
+#registerbutton{
+    font-family: 'Imprima', sans-serif;
+    font-weight: bold;
+    text-decoration:none;
+    color: inherit;
+    padding-left: 10px; 
+
+}
