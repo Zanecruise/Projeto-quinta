@@ -16,12 +16,13 @@
             <input type="text" id="produto" name="produto"><br>
             <br>
             <h1>Variações</h1>
-            <input type="text" id="cor" name="cor"><br>
+            <input type="text" id="tipo" name="tipo"><br>
             <br> <!-- Mudar -->
             <input type="text" id="quantidade" name="quantidade"><br>
             <input type="text" id="precocompra" name="precocompra"><br>
             <input type="text" id="precovenda" name="precovenda"><br>
             <input type="text" id="codigo" name="codigo"><br>
+
             <input  id="done" type="button" name="answer" value="Done" onclick="Done()" />
 
         </div>
@@ -66,7 +67,35 @@
         document.getElementById('BOX').style.display = "block";
         }
 
-        let produtoinst = "Fiat";
+        function Done() {
+
+            class produto {
+                id = 0;
+                nome = "1";
+                quantidade = 0;
+                precocompra = 0;
+                precovenda = 0;
+                codigo = 0;
+                tipo = "1";
+        
+            }
+
+            let Produtos = new produto();
+            Produtos.nome = (document.getElementById("produto").value)
+            Produtos.quantidade = (parseInt(document.getElementById("quantidade").value))
+            Produtos.precocompra = (parseFloat(document.getElementById("precocompra").value))
+            Produtos.precovenda = (parseFloat(document.getElementById("precovenda").value))
+            Produtos.codigo = (parseInt(document.getElementById("codigo").value))
+            Produtos.tipo = (document.getElementById("tipo").value)
+
+            Produtos.id = i++ // contador do id puxa do json
+
+            // colocar push pro json aqui
+
+            console.log(Produtos)            
+        }
+
+    
 
     </script>
 
