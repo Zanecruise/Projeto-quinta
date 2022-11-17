@@ -7,14 +7,68 @@
     <title>Estoque</title>
 </head>
 <body>
-    <header>
-        
-    </header>
+
     <main>
 
-    </main>
-    <footer>
+        <div id="BOX"  style="display:none;" class="answer_list" >
+            <h1>Adicionar produto</h1>
+            <label for="produto">Nome do produto</label><br>
+            <input type="text" id="produto" name="produto"><br>
+            <br>
+            <h1>Variações</h1>
+            <input type="text" id="cor" name="cor"><br>
+            <br> <!-- Mudar -->
+            <input type="text" id="quantidade" name="quantidade"><br>
+            <input type="text" id="precocompra" name="precocompra"><br>
+            <input type="text" id="precovenda" name="precovenda"><br>
+            <input type="text" id="codigo" name="codigo"><br>
+            <input  id="done" type="button" name="answer" value="Done" onclick="Done()" />
 
-    </footer>
+        </div>
+        <input  id="botaoadd" type="button" name="answer" value="Adicionar produto" onclick="showDiv()" />
+
+
+    </main>
+
+    <style>
+
+        #BOX{
+
+            width: 80vw;
+            height: 80vh;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 1vmin;
+            position: absolute;
+            align-content: center;
+            margin-left: 10vw;
+            margin-top: 10vmin;
+            overflow: hidden;
+
+
+        }
+
+        #botaoadd{
+
+            background-color: rgb(65, 255, 65);
+            border: 0px;
+            border-radius: 1vmin;
+            padding: 2vmin;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+
+
+        }
+
+    </style>
+
+    <script>
+
+        function showDiv() {
+        document.getElementById('BOX').style.display = "block";
+        }
+
+        let produtoinst = "Fiat";
+
+    </script>
+
 </body>
 </html>
