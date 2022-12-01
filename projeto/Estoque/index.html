@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../Estoque/script.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>Estoque</title>
 </head>
 <body>
@@ -13,24 +14,57 @@
 
         <div id="BOX"  style="display:none;" class="answer_list" >
             <h1>Adicionar produto</h1>
-            <label for="produto">Nome do produto</label><br>
-            <input type="text" id="produto" name="produto"><br>
+        <form>
+            <label for="produto">Nome do produto:</label>
+            <input type="text" id="produto" name="produto" required value="Caneta" maxlength="10" pattern="^[a-zA-Z ]*$"><br>
             <br>
             <h1>Variações</h1>
-            <input type="text" id="tipo" name="tipo"><br>
+            <label for="tipo">Tipo:</label>
+            <input type="text" id="tipo" name="tipo" required value="Azul" maxlength="10" pattern="^[a-zA-Z ]*$"><br>
             <br> <!-- Mudar -->
-            <input type="text" id="quantidade" name="quantidade"><br>
-            <input type="text" id="precocompra" name="precocompra"><br>
-            <input type="text" id="precovenda" name="precovenda"><br>
-            <input type="text" id="codigo" name="codigo"><br>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required value="64"><br>
+            <label for="precocompra">Preço de compra:</label>
+            <input type="number" id="precocompra" name="precocompra" required value="2.00" step="0.01"><br>
+            <label for="precovenda">Preço de venda:</label>
+            <input type="number" id="precovenda" name="precovenda" required value="4.00" step="0.01"><br>
+            <label for="codigo">Código do produto:</label>
+            <input type="number" id="codigo" name="codigo" required value="1" min ="1" max="5000"><br>
+            <button type="reset">Limpar</button>
+            <input type="submit" value="Enviar" onclick="Done()">
 
-            <input  id="done" type="button" name="answer" value="Done" onclick="Done()" />
+            
+        </form>
+        
 
         </div>
         <input  id="botaoadd" type="button" name="answer" value="Adicionar produto" onclick="showDiv()" />
 
+        <input  id="botaoremove" type="button" name="answer" value="Limpar produtos" onclick="removeprodutos()" />
+
+
+        <div class="list-group widget uib_w_44 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="1">
+
+
+            <a class="list-group-item allow-badge widget uib_w_45 disabled" data-uib="twitter%20bootstrap/list_item" data-ver="1" id="btnOcorrenciaVer">
+                 <h4 class="list-group-item-heading"></h4>
+                 <p class="list-group-item-text"></p>
+                
+            </a>
+    
+    
+        </div>
+
+ 
 
     </main>
+
+    <script>
+
+
+
+
+    </script>
 
     <style>
 
@@ -60,49 +94,41 @@
 
         }
 
+        #botaoremove{
+
+            background-color: rgb(252, 101, 101);
+            border: 0px;
+            border-radius: 1vmin;
+            padding: 2vmin;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+
+        }
+
+        h4{
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2vh;
+
+        }
+
+        p{
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5vh;
+
+        }
+
+        .produtostodos{
+
+            
+            
+
+
+        }
+
+
     </style>
 
-    <script>
-
-        
-
-        function showDiv() {
-            document.getElementById('BOX').style.display = "block";
-        }
-
-        function Done() {
-
-
-
-            class produto {
-                id = 0;
-                nome = "1";
-                quantidade = 0;
-                precocompra = 0;
-                precovenda = 0;
-                codigo = 0;
-                tipo = "1";
-        
-            }
-
-            let Produtos = new produto();
-            Produtos.nome = (document.getElementById("produto").value)
-            Produtos.quantidade = (parseInt(document.getElementById("quantidade").value))
-            Produtos.precocompra = (parseFloat(document.getElementById("precocompra").value))
-            Produtos.precovenda = (parseFloat(document.getElementById("precovenda").value))
-            Produtos.codigo = (parseInt(document.getElementById("codigo").value))
-            Produtos.tipo = (document.getElementById("tipo").value)
-
-            Produtos.id = i++ // contador do id puxa do json
-
-
-            console.log(Produtos)
-
-           
-        }
-  
-
-    </script>
 
 </body>
 </html>
