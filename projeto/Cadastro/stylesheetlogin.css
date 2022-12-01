@@ -17,7 +17,7 @@ body{
 #inputs{
     position: absolute;
     top: 30%;
-    left: 43%;
+    left: 42%;
 }
 
 #inputConfirm{
@@ -65,7 +65,7 @@ body{
     font-weight: 700;
     position: absolute;
     top: 130%;
-    left: 22px;
+    left: 16%;
   }
   .btn:hover, .btn:focus {
     color: #fff;
@@ -83,6 +83,29 @@ body{
 
 a {
    text-decoration: none; 
-   color: black;
+   color: white;
 }
+
+#top{
+    display: flex;
+    background-size: cover;
+    background-attachment: scroll;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Imprima', sans-serif;
+
+}
+
+#top2{
+    font-family: 'Imprima', sans-serif;
+    display: flex;
+    color: white;
+    background-size: cover;
+    background-attachment: scroll;
+    padding-right: 50px;
+
+}
+
 
